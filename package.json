@@ -1,0 +1,24 @@
+{
+  "name": "pid-exercise-functional",
+  "version": "1.0.0",
+  "description": "This exercise is about using functional programming concepts in JavaScript. Common concepts in functional programming is  that everything is stateless (no changes in variables) and consists of functions. Latest addition to Javascript was ES6  which supports functional programming in JavaScript. In this exercise we will explore some of these concepts.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janko101/pid-exercise-functional.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/janko101/pid-exercise-functional/issues"
+  },
+  "homepage": "https://github.com/janko101/pid-exercise-functional#readme",
+  "devDependencies": {
+    "eslint": "^7.22.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
+  }
+}
