@@ -44,7 +44,11 @@ test("femalesCount should count correct number of females", () => {
 });
 
 test("fullNameOfAllPeopleOver35 should return first and last name of people over 35", () => {
-  expect(submission.fullNameOfAllPeopleOver35(listOfPeople)).toEqual([ "Minne MacGilfoyle,Amanda Gownge"]
-   
-  );
+  expect(submission.fullNameOfAllPeopleOver35(listOfPeople)).toEqual([
+    "Minne MacGilfoyle,Amanda Gownge",
+  ]);
+});
+
+test("ageSum should return sum of all ages", () => {
+  expect(submission.ageSum(listOfPeople)).toBe(203);
 });

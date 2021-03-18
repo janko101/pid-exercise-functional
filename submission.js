@@ -1,13 +1,13 @@
 
-const dataSourceArray = process.argv.slice(2);
+// const dataSourceArray = process.argv.slice(2);
 
-const dataSource = dataSourceArray[0];
+// const dataSource = dataSourceArray[0];
 
-const fs = require("fs");
+// const fs = require("fs");
 
-const dataFromFile = fs.readFileSync(dataSource);
+// const dataFromFile = fs.readFileSync(dataSource);
 
-let personData = JSON.parse(dataFromFile);
+// let personData = JSON.parse(dataFromFile);
 
 function femalesCount(listOfPeople) {
   const femalePersons = listOfPeople.filter(
@@ -27,8 +27,8 @@ function ageSum(listOfPeople) {
   return listOfPeople.reduce((total, value) => total + value.age, 0)
 }
 
-console.log("Number of females is: " + femalesCount(personData));
-console.log("Full name of people over 35 are: " + fullNameOfAllPeopleOver35(personData));
-console.log("The sum of all ages is: " + ageSum(personData));
+// console.log("Number of females is: " + femalesCount(personData));
+// console.log("Full name of people over 35 are: " + fullNameOfAllPeopleOver35(personData));
+// console.log("The sum of all ages is: " + ageSum(personData));
 
-module.exports = {femalesCount: femalesCount, fullNameOfAllPeopleOver35: fullNameOfAllPeopleOver35 }
+module.exports = {femalesCount: femalesCount, fullNameOfAllPeopleOver35: fullNameOfAllPeopleOver35, ageSum: ageSum }
