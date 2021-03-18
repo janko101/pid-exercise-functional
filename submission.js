@@ -1,4 +1,3 @@
-
 // const dataSourceArray = process.argv.slice(2);
 
 // const dataSource = dataSourceArray[0];
@@ -24,11 +23,21 @@ function fullNameOfAllPeopleOver35(listOfPeople) {
 }
 
 function ageSum(listOfPeople) {
-  return listOfPeople.reduce((total, value) => total + value.age, 0)
+  return listOfPeople.reduce((total, value) => total + value.age, 0);
+}
+
+function averageAge(listOfPeople) {
+  return ageSum(listOfPeople) / listOfPeople.length;
 }
 
 // console.log("Number of females is: " + femalesCount(personData));
 // console.log("Full name of people over 35 are: " + fullNameOfAllPeopleOver35(personData));
 // console.log("The sum of all ages is: " + ageSum(personData));
+// console.log("The average age is: " + averageAge(personData));
 
-module.exports = {femalesCount: femalesCount, fullNameOfAllPeopleOver35: fullNameOfAllPeopleOver35, ageSum: ageSum }
+module.exports = {
+  femalesCount: femalesCount,
+  fullNameOfAllPeopleOver35: fullNameOfAllPeopleOver35,
+  ageSum: ageSum,
+  averageAge: averageAge
+};
